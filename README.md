@@ -1,6 +1,6 @@
 # SMNTCS Private Site
 
-[![](https://img.shields.io/github/license/nielslange/smntcs-private-site.svg**)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![](https://img.shields.io/github/license/nielslange/smntcs-private-site.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![](https://plugintests.com/plugins/smntcs-private-site/wp-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
 [![](https://plugintests.com/plugins/smntcs-private-site/php-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
 [![](https://img.shields.io/wordpress/plugin/dt/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
