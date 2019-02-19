@@ -1,12 +1,17 @@
 <?php
-/*
+/**
  * Plugin Name: SMNTCS Private Site
-* Description: Allow only logged in users to access the site
-* Author: Niels Lange
-* Author URI: https://nielslange.com
-* Text Domain: smntcs-private-site
-* Domain Path: /languages/
-* Version: 1.0
+ * Plugin URI: https://github.com/nielslange/smntcs-private-site
+ * Description: Allow only logged in users to access the site
+ * Author: Niels Lange
+ * Author URI: https://nielslange.com
+ * Text Domain: smntcs-private-site
+ * Domain Path: /languages/
+ * Version: 1.1
+ * Requires at least: 3.4
+ * Tested up to: 5.0
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 /* Copyright 2014-2016 Niels Lange (email : info@nielslange.de)
