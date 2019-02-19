@@ -7,7 +7,7 @@
  * Author URI: https://nielslange.com
  * Text Domain: smntcs-private-site
  * Domain Path: /languages/
- * Version: 1.1
+ * Version: 1.2
  * Requires at least: 3.4
  * Tested up to: 5.0
  * License: GPLv2
