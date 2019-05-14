@@ -3,33 +3,23 @@
  * Plugin Name: SMNTCS Private Site
  * Plugin URI: https://github.com/nielslange/smntcs-private-site
  * Description: Allow only logged in users to access the site
- * Author: Niels Lange
- * Author URI: https://nielslange.com
+ * Author: Niels Lange <info@nielslange.de>
+ * Author URI: https://nielslange.de
  * Text Domain: smntcs-private-site
  * Domain Path: /languages/
- * Version: 1.2
+ * Version: 1.3
  * Requires at least: 3.4
- * Tested up to: 5.0
- * License: GPLv2
+ * Requires PHP: 5.6
+ * Tested up to: 5.2
+ * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @category   Plugin
+ * @package    WordPress
+ * @subpackage SMNTCS Private Site
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
-
-/* Copyright 2014-2016 Niels Lange (email : info@nielslange.de)
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
 
 // Avoid direct plugin access
 if ( ! defined( 'ABSPATH' ) ) { die( '¯\_(ツ)_/¯' );
@@ -44,7 +34,7 @@ function smntcs_ps_plugins_loaded() {
 // Add settings link on plugin page
 add_filter( "plugin_action_links_" . plugin_basename( __FILE__ ), 'smntcs_ps_plugin_settings_link' );
 function smntcs_ps_plugin_settings_link( $links ) {
-	$admin_url    = admin_url( 'widgets.php' );
+	$admin_url    = admin_url( 'customize.php?autofocus[control]=smntcs_ps_enable' );
 	$settings_url = sprintf( '<a href="%s">%s</a>', $admin_url, __( 'Settings', 'smntcs-private-site' ) );
 	array_unshift( $links, $settings_url );
 
@@ -91,7 +81,6 @@ function smntcs_ps_register_customize( $wp_customize ) {
 
 	$wp_customize->add_setting( 'smntcs_ps_message', array(
 		'capability'        => 'edit_theme_options',
-		'default'           => __( 'This site is marked private by its owner.', 'smntcs-private-site' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'type'              => 'option',
 	) );
@@ -157,14 +146,11 @@ function smntcs_ps_custom_css() {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            }
-
-            #message {
-                margin-bottom: 25vh;
-                text-align: center;
-                width: 200px;
+				text-align: center;
+				height: 100%;
             }
         </style>
 	    <?php
 	}
+
 }
