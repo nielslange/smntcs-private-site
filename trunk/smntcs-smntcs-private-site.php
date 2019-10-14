@@ -180,7 +180,7 @@ function smntcs_ps_register_customize( $wp_customize ) {
 			$wp_customize,
 			'smntcs_ps_background',
 			array(
-				'label'    => __( 'Background Image', 'themename' ),
+				'label'    => __( 'Background Image', 'smntcs-private-site' ),
 				'section'  => 'smntcs_ps_section',
 				'settings' => 'smntcs_ps_background',
 			)
