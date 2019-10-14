@@ -1,11 +1,13 @@
 # SMNTCS Private Site
 
-[![](https://img.shields.io/github/license/nielslange/smntcs-private-site.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![](https://plugintests.com/plugins/smntcs-private-site/wp-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
-[![](https://plugintests.com/plugins/smntcs-private-site/php-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
-[![](https://img.shields.io/wordpress/plugin/dt/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
-[![](https://img.shields.io/wordpress/plugin/v/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
-[![](https://img.shields.io/github/tag/nielslange/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+[![Build Status](https://api.travis-ci.com/nielslange/smntcs-private-site.svg?branch=master)](https://api.travis-ci.com/nielslange/smntcs-private-site)
+[![GPLv3 License](https://img.shields.io/github/license/nielslange/smntcs-private-site.svg)](https://www.gnu.org/licenses/gpl.html)
+[![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-private-site/wp-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
+[![Compatible to PHP version](https://plugintests.com/plugins/smntcs-private-site/php-badge.svg)](https://plugintests.com/plugins/smntcs-private-site/latest)
+[![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
+[![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
 
 Allow only logged in users to access the site
 
