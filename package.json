@@ -1,0 +1,26 @@
+{
+	"name": "smntcs-private-site",
+	"version": "1.0.0",
+	"description": "Allow only logged in users to access the site",
+	"author": "Niels Lange",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Private Site"
+	],
+	"homepage": "https://github.com/nielslange/smntcs-private-site#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nielslange/smntcs-private-site.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nielslange/smntcs-private-site/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
