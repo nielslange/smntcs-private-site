@@ -20,6 +20,10 @@ Allow only logged in users to access the site
 
 ## Changelog
 
+### 1.3
+
+* Updated GPLv2 to GPLv3
+
 ### 1.4
 
 * Tested up to 5.3

@@ -7,12 +7,12 @@
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-private-site
  * Domain Path: /languages/
- * Version: 1.4
+ * Version: 1.5
  * Requires at least: 3.4
  * Requires PHP: 5.6
  * Tested up to: 5.3
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl.html
  *
  * @since 1.0.0
  * @package WordPress

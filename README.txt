@@ -5,9 +5,9 @@ Donate link:
 Tags: Private Site
 Requires at least: 3.4
 Tested up to: 5.3
-Stable tag: 1.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.5
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
 
 Allow only logged in users to access the site
 
@@ -23,6 +23,9 @@ Allow only logged in users to access the site
 4. Adjust the settings according to you needs
 
 == Changelog ==
+
+= 1.5 =
+* Updated GPLv2 to GPLv3
 
 = 1.4 =
 * Tested up to 5.3
