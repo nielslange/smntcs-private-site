@@ -17,3 +17,26 @@ Allow only logged in users to access the site
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to 'Customize » Private Site'
 4. Adjust the settings according to you needs
+
+## Changelog
+
+### 1.4
+
+* Tested up to 5.3
+* Refactored based on PHPCS and WPCS
+
+### 1.3
+
+* Tested up to 5.2
+
+### 1.2
+
+* Tested up to 5.1
+
+### 1.1
+
+* Tested up to 5.0
+
+### 1.0
+
+* Initial release
