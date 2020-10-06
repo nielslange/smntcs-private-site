@@ -9,7 +9,7 @@
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
 [![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-private-site.svg)](https://wordpress.org/plugins/smntcs-private-site/)
 
- Allow only logged in users to access the site
+Allow only logged in users to access the site
 
 ## Installation
 
