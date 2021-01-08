@@ -20,27 +20,24 @@ Allow only logged in users to access the site
 
 ## Changelog
 
-### 1.5
+### 1.6 (2021.01.08)
+* Tested up to WordPress 5.6
 
+### 1.5 (2019.10.15)
 * Updated GPLv2 to GPLv3
 
-### 1.4
-
+### 1.4 (2019.10.15)
 * Tested up to 5.3
 * Refactored based on PHPCS and WPCS
 
-### 1.3
+### 1.3 (2019.05.14)
+* Tested up to WordPress 5.2
 
-* Tested up to 5.2
+### 1.2 (2019.02.19)
+* Tested up to WordPress 5.1
 
-### 1.2
+### 1.1 (2019.02.19)
+* Tested up to WordPress 5.0
 
-* Tested up to 5.1
-
-### 1.1
-
-* Tested up to 5.0
-
-### 1.0
-
+### 1.0 (2018.04.09)
 * Initial release
