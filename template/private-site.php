@@ -19,7 +19,7 @@ endif;
 
 if ( get_option( 'smntcs_ps_login_button' ) ) :
 	printf(
-		'<a href="%s"><input type="submit" class="button button-primary button-large" value="%s"></a>',
+		'<p><a href="%s"><input type="submit" class="button button-primary" value="%s"></a></p>',
 		esc_url( wp_login_url() ),
 		esc_html__( 'Visit login form', 'smntcs-private-site' )
 	);

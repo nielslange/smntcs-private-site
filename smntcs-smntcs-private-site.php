@@ -5,10 +5,9 @@
  * Description: Allow only logged in users to access the site
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
- * Text Domain: smntcs-private-site
- * Version: 1.6
- * Stable tag: 1.6
- * Tested up to: 5.6
+ * Version: 1.7
+ * Stable tag: 1.7
+ * Tested up to: 5.8
  * Requires at least: 3.4
  * Requires PHP: 5.6
  * License: GPLv2+
@@ -161,7 +160,7 @@ add_action( 'customize_register', 'smntcs_ps_register_customize' );
  * @return array $page_template The updated string with page template.
  */
 function smntcs_ps_page_template( $page_template ) {
-	if ( get_option( 'smntcs_ps_enable' ) && ! is_user_logged_in() ) {
+	if ( esc_attr( get_option( 'smntcs_ps_enable' ) ) && ! is_user_logged_in() ) {
 		$page_template = dirname( __FILE__ ) . '/template/private-site.php';
 	}
 
@@ -193,7 +192,7 @@ add_filter( 'taxonomy_template', 'smntcs_ps_page_template' );
  * @return void
  */
 function smntcs_ps_custom_css() {
-	if ( get_option( 'smntcs_ps_enable' ) && ! is_user_logged_in() ) {
+	if ( esc_attr( get_option( 'smntcs_ps_enable' ) ) && ! is_user_logged_in() ) {
 		?>
 		<style>
 			body {
@@ -209,9 +208,13 @@ function smntcs_ps_custom_css() {
 			}
 
 			#message {
-				margin-bottom: 25vh;
 				text-align: center;
 				width: 200px;
+			}
+
+			p {
+				font-weight: 600;
+				margin-bottom: 1em;
 			}
 		</style>
 		<?php
