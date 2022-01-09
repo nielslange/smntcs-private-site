@@ -4,23 +4,24 @@ Contributors: nielslange
 Donate link:
 Tags: Private Site
 Version: 1.6
+Stable tag: 1.6
+Tested up to: 5.6
 Requires at least: 3.4
 Requires PHP: 5.6
-Tested up to: 5.6
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.html
+License: GPLv2+
+License URI: https://opensource.org/licenses/GPL-2.0
 
-Allow only logged in users to access the site
+Allow only logged in users to access the site.
 
 == Description ==
 
-Allow only logged in users to access the site
+Allow only logged in users to access the site.
 
 == Installation ==
 
-1. Upload 'smntcs-private-site to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to 'Customize » Private Site'
+1. Upload `smntcs-private-site` to the `/wp-content/plugins/` directory
+2. Activate the plugin through the `Plugins` menu in WordPress
+3. Go to `Customize » Private Site`
 4. Adjust the settings according to you needs
 
 == Changelog ==

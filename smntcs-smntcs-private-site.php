@@ -6,66 +6,32 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-private-site
- * Domain Path: /languages/
  * Version: 1.6
+ * Stable tag: 1.6
+ * Tested up to: 5.6
  * Requires at least: 3.4
  * Requires PHP: 5.6
- * Tested up to: 5.6
- * License: GPLv3
- * License URI: https://www.gnu.org/licenses/gpl.html
+ * License: GPLv2+
+ * License URI: https://opensource.org/licenses/GPL-2.0
  *
- * @since 1.0.0
- * @package WordPress
+ * @category   Plugin
+ * @package    WordPress
  * @subpackage SMNTCS Private Site
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    https://opensource.org/licenses/GPL-2.0
  */
 
-/*
-Copyright 2014-2016 Niels Lange (email : info@nielslange.de)
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-
-/**
- * Avoid direct plugin access
- *
- * @since 1.0.0
- */
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
-
-/**
- * Load text domain
- *
- * @since 1.0.0
- * @return void
- */
-function smntcs_ps_plugins_loaded() {
-	load_plugin_textdomain( 'smntcs-private-site', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcs_ps_plugins_loaded' );
+// Avoid direct plugin access.
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Add settings link on plugin page
  *
- * @since 1.0.0
  * @param array $links The original array with customizer links.
  * @return array $links The updated array with customizer links.
  */
 function smntcs_ps_plugin_settings_link( $links ) {
-	$admin_url    = admin_url( 'widgets.php' );
+	$admin_url    = admin_url( 'customize.php?autofocus[control]=smntcs_ps_enable' );
 	$settings_url = sprintf( '<a href="%s">%s</a>', $admin_url, __( 'Settings', 'smntcs-private-site' ) );
 	array_unshift( $links, $settings_url );
 
@@ -76,7 +42,6 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_ps_plu
 /**
  * Enhance customizer
  *
- * @since 1.0.0
  * @param WP_Customize_Manager $wp_customize The instance of the WP_Customize_Manager class.
  */
 function smntcs_ps_register_customize( $wp_customize ) {
@@ -192,27 +157,43 @@ add_action( 'customize_register', 'smntcs_ps_register_customize' );
 /**
  * Load custom template
  *
- * @since 1.0.0
  * @param array $page_template The original string with page template.
  * @return array $page_template The updated string with page template.
  */
 function smntcs_ps_page_template( $page_template ) {
-	if ( esc_html( get_option( 'smntcs_ps_enable' ) ) && ! is_user_logged_in() ) {
+	if ( get_option( 'smntcs_ps_enable' ) && ! is_user_logged_in() ) {
 		$page_template = dirname( __FILE__ ) . '/template/private-site.php';
 	}
 
 	return $page_template;
 }
+add_filter( '404_template', 'smntcs_ps_page_template' );
+add_filter( 'archive_template', 'smntcs_ps_page_template' );
+add_filter( 'attachment_template', 'smntcs_ps_page_template' );
+add_filter( 'author_template', 'smntcs_ps_page_template' );
+add_filter( 'category_template', 'smntcs_ps_page_template' );
+add_filter( 'date_template', 'smntcs_ps_page_template' );
+add_filter( 'frontpage_template', 'smntcs_ps_page_template' );
+add_filter( 'embed_template', 'smntcs_ps_page_template' );
+add_filter( 'frontpage_template', 'smntcs_ps_page_template' );
+add_filter( 'home_template', 'smntcs_ps_page_template' );
+add_filter( 'index_template', 'smntcs_ps_page_template' );
 add_filter( 'page_template', 'smntcs_ps_page_template' );
+add_filter( 'paged_template', 'smntcs_ps_page_template' );
+add_filter( 'privacypolicy_template', 'smntcs_ps_page_template' );
+add_filter( 'search_template', 'smntcs_ps_page_template' );
+add_filter( 'single_template', 'smntcs_ps_page_template' );
+add_filter( 'singular_template', 'smntcs_ps_page_template' );
+add_filter( 'tag_template', 'smntcs_ps_page_template' );
+add_filter( 'taxonomy_template', 'smntcs_ps_page_template' );
 
 /**
  * Load custom CSS.
  *
- * @since 1.0.0
  * @return void
  */
 function smntcs_ps_custom_css() {
-	if ( esc_html( get_option( 'smntcs_ps_enable' ) ) && ! is_user_logged_in() ) {
+	if ( get_option( 'smntcs_ps_enable' ) && ! is_user_logged_in() ) {
 		?>
 		<style>
 			body {
