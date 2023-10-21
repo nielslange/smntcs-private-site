@@ -20,6 +20,10 @@ Allow only logged in users to access the site.
 
 ## Changelog
 
+### 1.9 (2023.10.21)
+
+- Test up to WP 6.4
+
 ### 1.8 (2022.12.03)
 
 - Test up to WP 6.1

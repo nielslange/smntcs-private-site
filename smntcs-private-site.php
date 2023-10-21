@@ -5,11 +5,11 @@
  * Description:           Allow only logged in users to access the site.
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
- * Text Domain:           smntcs-smntcs-private-site
+ * Text Domain:           smntcs-private-site
  * Version:               1.8
- * Requires PHP:          5.6
  * Requires at least:     3.4
- * License:               GPL v2 or later
+ * Requires PHP:          5.6
+ * License:               GPL-2.0-or-later
  * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
  * @package SMNTCS_Private_Site
