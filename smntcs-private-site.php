@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-private-site
- * Version:               1.8
+ * Version:               2.0
  * Requires at least:     3.4
  * Requires PHP:          5.6
  * License:               GPL-2.0-or-later

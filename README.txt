@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Private Site
-Stable tag:         1.9
-Tested up to: 		6.4
+Stable tag:         2.0
+Tested up to: 		6.8
 Requires at least:  3.4
 Requires PHP: 		5.6
 License:            GPL v2 or later
@@ -23,6 +23,10 @@ Allow only logged in users to access the site.
 4. Adjust the settings according to you needs
 
 == Changelog ==
+
+= 2.0 (2025.03.20) =
+
+- Test up to WP 6.8
 
 = 1.9 (2023.10.21) =
 
