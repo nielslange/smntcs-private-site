@@ -18,6 +18,10 @@ Allow only logged in users to access the site.
 3. Go to `Customize » Private Site`.
 4. Adjust the settings according to you needs.
 
+## Plugin page
+
+You can find the plugin on https://wordpress.org/plugins/smntcs-private-site/.
+
 ## Changelog
 
 ### 2.0 (2025.03.20)
