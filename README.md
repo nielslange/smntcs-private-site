@@ -24,6 +24,11 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-private-site/.
 
 ## Changelog
 
+### 2.1 (2026.08.14)
+
+- Test up to WP 7.0
+- Update dev dependencies and fix PHPCS violation
+
 ### 2.0 (2025.03.20)
 
 - Test up to WP 6.8
