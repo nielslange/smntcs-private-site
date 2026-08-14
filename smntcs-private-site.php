@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-private-site
- * Version:               2.0
+ * Version:               2.1
  * Requires at least:     3.4
  * Requires PHP:          5.6
  * License:               GPL-2.0-or-later
@@ -155,7 +155,7 @@ add_action( 'customize_register', 'smntcs_ps_register_customize' );
  */
 function smntcs_ps_page_template( $page_template ) {
 	if ( esc_attr( get_option( 'smntcs_ps_enable' ) ) && ! is_user_logged_in() ) {
-		$page_template = dirname( __FILE__ ) . '/template/private-site.php';
+		$page_template = __DIR__ . '/template/private-site.php';
 	}
 
 	return $page_template;
