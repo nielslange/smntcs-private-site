@@ -3,3 +3,9 @@
 .svn
 node_modules
 vendor
+.phplint.cache
+cypress/screenshots
+cypress/videos
+playwright-report
+test-results
+.phplint-cache

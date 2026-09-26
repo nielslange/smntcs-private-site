@@ -1,28 +1,35 @@
 === SMNTCS Private Site ===
 
 Contributors:       nielslange
-Tags:               Private Site
-Stable tag:         2.1
-Tested up to: 		7.0
+Tags:               private, private site, members only, login required, restrict access
 Requires at least:  3.4
-Requires PHP: 		5.6
+Tested up to:       7.1
+Requires PHP:       5.6
+Stable tag:         2.2
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Allow only logged in users to access the site.
+Makes your site private, so visitors who are not logged in see a message instead of your content.
 
 == Description ==
 
-Allow only logged in users to access the site.
+SMNTCS Private Site hides your site from visitors who are not logged in. They see a private page with your message instead of your content. Logged-in users see the site as usual. This is useful for intranets, staging sites and sites that are still being built.
+
+In the Customizer you can switch private mode on and off, write the message, choose its colour and a background image, and show a login button.
 
 == Installation ==
 
 1. Upload `smntcs-private-site` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the `Plugins` menu in WordPress
 3. Go to `Customize » Private Site`
-4. Adjust the settings according to you needs
+4. Adjust the settings according to your needs
 
 == Changelog ==
+
+= 2.2 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
 
 = 2.1 (2026.08.14) =
 
